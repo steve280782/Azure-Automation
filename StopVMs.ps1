@@ -15,10 +15,10 @@ workflow StopVMs
 	Add-AzureAccount -Credential $Cred | Write-Verbose
 
 	# Select the Azure subscription you want to work against
-	Select-AzureSubscription -SubscriptionName "[insert subscription name here" | Write-Verbose
+	Select-AzureSubscription -SubscriptionName "[insert subscription name here]" | Write-Verbose
 
 	# Stop a list of VMs
-	Stop-AzureVM -Name [insert VM name] -ServiceName [insert Cloud Service Name]-Force
+	Stop-AzureVM -Name [insert VM name] -ServiceName [insert Cloud Service Name] -Force
     #Multiple stop VM commands can be listed here
 }
 # Preliminary steps
