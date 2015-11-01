@@ -21,3 +21,8 @@ workflow StartVMs
 	Start-AzureVM -Name [name of VM] -ServiceName [name of Cloud Service]
   # multiple start VM commands can be listed here
 }
+# Preliminary steps
+# 1 Create Azure Automation Instance
+# 2 Create Azure user to be used to authenticate automation and set password by logging into web portal
+# 3 Create Credential (Asset) for this user under the Azure automation instance
+# 4 Create Schedule (Asset) under the Azure automation instance
